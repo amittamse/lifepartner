@@ -1,0 +1,179 @@
+<div class="center-block profileView"  ng-controller="profileController">
+<!-- <div class="row marginBottom10px">
+    <button class="myRecommendationsButton pull-right">My Profile</button>
+    <button class="myRecommendationsButton pull-right">Logout</button>
+    <button class="myRecommendationsButton pull-right">My Recommendations</button>
+
+</div> -->
+<div class="row clearfix">
+    <div class="col-md-4">        
+        <blockquote class="backgroundThemeColor"><p>{{profile.prof_description}}</p><p><small>Me</small></p></blockquote>
+        <!--<img src="http://karwarbhandarisangh.com/profile/images/Rajesh.jpg" alt="Image Not Found" 
+             class="img-thumbnail img-responsive">-->
+        <img src="/{{profile.prof_image_path}}" alt="Image Not Found" 
+             class="img-thumbnail img-responsive" style="width: 100%;max-height: 500px;">    
+        
+        <blockquote class="backgroundThemeColor"><p>{{profile.prof_expectations}}</p><p><small>My Expectations</small></p></blockquote>
+    </div>
+    <div class="col-md-8 profileBoxContainer">
+        <div class="col-md-12">
+            <h4 class="page-header"><i class="glyphicon glyphicon-user"></i><span> {{profile.prof_name}} </span><span class="badge">{{profile.prof_active}}</span>
+             <button class="btn btn-primary" type="button" ng-click="openProfileRecommendations()">
+              Recommendations <span class="badge">4</span>
+            </button>
+            </h4>
+            <i class="glyphicon glyphicon-pencil pull-right" style="margin-top: -77px;  cursor: pointer;" ng-click="openProfileEditPopUp()"></i><!-- </button> -->
+            <div class="col-md-6">
+                <p class="lead"><i class="glyphicon glyphicon-calendar"></i> 
+                    <span class="profileLabels">Born on:</span>
+                    <span class="profileData"> {{profile.prof_dob}}</span>
+                </p>         
+                <p class="lead">
+                    <span class="profileLabels">Language spoken at home: </span>
+                    <span class="profileData"> {{profile.prof_mother_tongue}}</span>
+                </p>
+                <p class="lead">
+                    <span class="profileLabels">Blood Group : </span>
+                    <span class="profileData"> {{profile.prof_bloodgroup}}</span>
+                </p>
+                <p class="lead">
+                    <span class="profileLabels">Martial Status : </span>
+                    <span class="profileData"> {{profile.prof_marital_status}}</span>
+                </p>
+                <p class="lead">
+                    <span class="profileLabels">Eating habits : </span>
+                    <span class="profileData"> {{profile.prof_eating_habits}}</span>
+                </p> 
+                <p class="lead">
+                    <span class="profileLabels">Smoking habits : </span>
+                    <span class="profileData"> {{profile.prof_smoking_habits}}</span>
+                </p> 
+            </div>
+            <div class="col-md-6">
+                <p class="lead">
+                    <span class="profileLabels">Weight: </span>
+                    <span class="profileData"> {{profile.prof_weight}} kgs</span>
+                </p>
+                <p class="lead">
+                    <span class="profileLabels">Height: </span>
+                    <span class="profileData"> {{profile.prof_height}}</span>
+                </p>        
+                <p class="lead">
+                    <span class="profileLabels">Complexion : </span>
+                    <span class="profileData"> {{profile.prof_complexion}}</span>
+                </p>               
+                <p class="lead">
+                    <span class="profileLabels">Physical Status : </span>
+                    <span class="profileData"> {{profile.prof_physical_status}}</span>
+                </p>   
+                <p class="lead">
+                    <span class="profileLabels">Drinking habits : </span>
+                    <span class="profileData"> {{profile.prof_drinking_habits}}</span>
+                </p>  
+            </div>
+        </div>
+        <div class="col-md-12">
+            <h4 class="borderBottom bolder">Professional Information</h4>
+            <div class="col-md-6">
+                <p class="lead"><i class="glyphicon glyphicon-book"></i> 
+                    <span class="profileLabels">Qualification:</span>
+                    <span class="profileData"> {{profile.prof_qualification}}</span>
+                </p>   
+                <p class="lead">
+                    <span class="profileLabels">Occupation : </span>
+                    <span class="profileData"> {{profile.prof_job_type}}</span>
+                </p>
+                <p class="lead">
+                    <span class="profileLabels">Parents Occupation : </span>
+                    <span class="profileData"> {{profile.prof_parent_occupation}}</span>
+                </p>    
+            </div>
+            <div class="col-md-6">
+                <p class="lead">
+                    <span class="profileLabels">Job Designation : </span>
+                    <span class="profileData"> {{profile.prof_job_designation}}</span>
+                </p>  
+                 <p class="lead">
+                    <span class="profileLabels">Annual Income : </span>
+                    <span class="profileData"> {{profile.prof_income}}</span>
+                </p>  
+            </div>
+        </div>   
+        <div class="col-md-12">
+            <h4 class="borderBottom bolder">Religious Information</h4>
+            <div class="col-md-6">
+                <p class="lead"><i class="glyphicon glyphicon-book"></i> 
+                    <span class="profileLabels">Religion:</span>
+                    <span class="profileData"> {{profile.prof_religion}}</span>
+                </p>   
+                <p class="lead">
+                    <span class="profileLabels">Caste/Sub-Caste : </span>
+                    <span class="profileData"> {{profile.prof_caste_subcaste}}</span>
+                </p>
+                <p class="lead">
+                    <span class="profileLabels">Gothram : </span>
+                    <span class="profileData"> {{profile.prof_gothram}}</span>
+                </p>    
+            </div>
+            <div class="col-md-6">
+                <p class="lead">
+                    <span class="profileLabels">Star/Raasi : </span>
+                    <span class="profileData"> {{profile.prof_star_raasi}}</span>
+                </p>  
+                 <p class="lead">
+                    <span class="profileLabels">Mangalik : </span>
+                    <span class="profileData"> {{profile.prof_manglik}}</span>
+                </p>  
+            </div>
+        </div>   
+        <div class="col-md-12">
+            <h4 class="borderBottom bolder">Location and Contact Information</h4>
+            <div class="col-md-6">
+                <p class="lead"><i class="glyphicon glyphicon-book"></i> 
+                    <span class="profileLabels">Current Address :</span>
+                    <span class="profileData"> {{profile.prof_address_home}}</span>
+                </p>   
+                <p class="lead">
+                    <span class="profileLabels">Native Address :</span>
+                    <span class="profileData"> {{profile.prof_address_native}}</span>
+                </p>
+                <p class="lead">
+                    <span class="profileLabels">City - State - Country: </span>
+                    <span class="profileData"> {{profile.prof_city}} - {{profile.prof_state}} - {{profile.prof_country}}</span>
+                </p>    
+            </div>
+            <div class="col-md-6">
+                <p class="lead">
+                    <span class="profileLabels">Mobile No : </span>
+                    <span class="profileData"> {{profile.prof_mobile}}</span>
+                </p>  
+                <p class="lead">
+                    <span class="profileLabels">Residence No : </span>
+                    <span class="profileData"> {{profile.prof_phone}}</span>
+                </p>  
+                <p class="lead">
+                    <span class="profileLabels">Email Id : </span>
+                    <span class="profileData"> {{profile.prof_email}}</span>
+                </p>  
+            </div>
+        </div>   
+    </div>           
+
+<!-- Modal -->
+<div class="modal fade" id="myProfileModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" ng-click="closeProfileEditPopUp()"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Edit Profile</h4>
+      </div>
+      <div class="modal-body">
+       <div ng-include src="'partials/edit-customer-details.html'"/>
+       </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="closeProfileEditPopUp()">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>

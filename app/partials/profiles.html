@@ -1,0 +1,29 @@
+ <div class="row">
+    <div class="col-md-12" ng-show="customers.length > 0">
+    
+    <nav class= "navbar navbar-default" role= "navigation" >
+    <div class= "navbar-header" >
+    <a class="btn btn-lg btn-success" href="#/edit-customer/0"><i class="glyphicon glyphicon-plus"></i>&nbsp;Add new Profile</a>
+    </div>
+    </nav>
+        <table class="table table-striped table-bordered">
+        <thead>
+        <tbody>
+            <!-- <tr ng-repeat="profile in profiles">
+                <td>{{profile.prof_name}}</td>
+                <td>{{profile.prof_dob}}</td>
+                <td>{{profile.prof_qualification}}</td>
+                <td>{{profile.prof_mobile}}</td>
+                <td>{{profile.prof_email}}</td>
+                <!-- <td><a href="#/edit-customer/{{data.customerNumber}}" class="btn">&nbsp;<i class="glyphicon glyphicon-edit"></i>&nbsp; Edit Customer</a></td> -->
+                <!--<td><button class="btn btn-primary">Open Profile</button></td>
+            </tr> -->
+        </tbody>
+        </table>
+    </div>
+    <div class="col-md-12" ng-show="customers.length == 0">
+        <div class="col-md-12">
+            <h4>No customers found</h4>
+        </div>
+    </div>
+</div>

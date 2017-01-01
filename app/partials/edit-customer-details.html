@@ -1,0 +1,447 @@
+<!-- Edit Profile Partial -->
+<div id="headerBlock">
+	<h5>Online Matrimonial Form - Karwar Jilha Bhandari Sangh, Mumbai</h5>
+</div>
+    <form action="submitregisteredform.php" class="form-horizontal" enctype="multipart/form-data" method="post">
+<fieldset>
+
+<div id="profileView">
+  <h3>Personal Information</h3>
+  <div>
+    <p>
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="txtName">Profile Name</label>
+  <div class="controls">
+    <input id="txtName" name="txtName" type="text" placeholder="your full name here" class="input-xlarge" required="">
+    <p class="help-block">Enter your full name as to be shown in profile. (e.g. Mr. Amit Kiran Tamse)</p>
+  </div>
+</div>
+
+<!-- File Button --> 
+<div class="control-group">
+  <label class="control-label" for="txtPhoto">Profile Picture</label>
+  <div class="controls">
+    <input id="txtPhoto" name="txtPhoto" class="input-file" accept="image/JPG,image/jpeg" type="file">
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="txtUsername">Username</label>
+  <div class="controls">
+    <input id="txtUsername" name="txtUsername" type="text" placeholder="your profile username" class="input-xlarge" required="">
+    <p class="help-block">Enter your profile username (Login id). Please make a note of the login id!</p>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="txtPassword">Password</label>
+  <div class="controls">
+    <input id="txtPassword" name="txtPassword" type="password" placeholder="your profile password" class="input-xlarge" required="">
+    <p class="help-block">Enter your profile password. Please make a note of the login password!</p>
+  </div>
+</div>
+
+<!-- Multiple Radios (inline) -->
+<div class="control-group">
+  <label class="control-label" for="radioMotherTongue">Mother Tongue</label>
+  <div class="controls">
+    <label class="radio inline" for="radioMotherTongue-0">
+      <input type="radio" name="radioMotherTongue" id="radioMotherTongue-0" value="Konkani" checked="checked" required="required">
+      Konkani
+    </label>
+    <label class="radio inline" for="radioMotherTongue-1">
+      <input type="radio" name="radioMotherTongue" id="radioMotherTongue-1" value="Bhandari" required="required">
+      Bhandari
+    </label>
+    <label class="radio inline" for="radioMotherTongue-2">
+      <input type="radio" name="radioMotherTongue" id="radioMotherTongue-2" value="Marathi" required="required">
+      Marathi
+    </label>
+    <label class="radio inline" for="radioMotherTongue-3">
+      <input type="radio" name="radioMotherTongue" id="radioMotherTongue-3" value="Others" required="required">
+      Others
+    </label>
+  </div>
+</div>
+
+<!-- Multiple Radios (inline) -->
+<div class="control-group">
+  <label class="control-label" for="radioGender">Gender</label>
+  <div class="controls">
+    <label class="radio inline" for="radioGender-0">
+      <input type="radio" name="radioGender" id="radioGender-0" value="Male" checked="checked" required="required">
+      Male
+    </label>
+    <label class="radio inline" for="radioGender-1">
+      <input type="radio" name="radioGender" id="radioGender-1" value="Female" required="required">
+      Female
+    </label>
+  </div>
+</div>
+
+<!-- Multiple Radios (inline) -->
+<div class="control-group">
+  <label class="control-label" for="radioMartialStatus">Marital Status</label>
+  <div class="controls">
+    <label class="radio inline" for="radioMartialStatus-0">
+      <input type="radio" name="radioMartialStatus" id="radioMartialStatus-0" value="Unmarried" checked="checked" required="required">
+      Unmarried
+    </label>
+    <label class="radio inline" for="radioMartialStatus-1">
+      <input type="radio" name="radioMartialStatus" id="radioMartialStatus-1" value="Married" required="required">
+      Married
+    </label>
+  </div>
+</div>
+
+<!-- Multiple Radios (inline) -->
+<div class="control-group">
+  <label class="control-label" for="radioPhysical">Physical Status</label>
+  <div class="controls">
+    <label class="radio inline" for="radioPhysical-0">
+      <input type="radio" name="radioPhysical" id="radioPhysical-0" value="No Disability" checked="checked" required="required">
+      No Disability
+    </label>
+    <label class="radio inline" for="radioPhysical-1">
+      <input type="radio" name="radioPhysical" id="radioPhysical-1" value="Handicapped" required="required">
+      Handicapped
+    </label>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="txtDob">Date of Birth</label>
+  <div class="controls">
+    <input id="txtDob" name="txtDob" type="text" placeholder="your birth date" class="input-xlarge" required="">
+    <p class="help-block">Select the date of birth from the calender when you click on the above text box</p>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="txtHeight">Height</label>
+  <div class="controls">
+    <input id="txtHeight" name="txtHeight" type="text" placeholder="your height" class="input-xlarge" required="">
+    <p class="help-block">Enter your height in Kgs</p>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="txtWeight">Weight</label>
+  <div class="controls">
+    <input id="txtWeight" name="txtWeight" type="text" placeholder="your weight" class="input-xlarge" required="">
+    <p class="help-block">Enter your heights in cms or foot</p>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="txtComplexion">Complexion</label>
+  <div class="controls">
+    <input id="txtComplexion" name="txtComplexion" type="text" placeholder="your complexion" class="input-xlarge" required="">
+    <p class="help-block">Enter your complexion (e.g. Dark, Fair)</p>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="txtBloodGroup">Blood Group</label>
+  <div class="controls">
+    <input id="txtBloodGroup" name="txtBloodGroup" type="text" placeholder="your blood group" class="input-xlarge">
+    <p class="help-block">Enter your blood group (e.g. A+)</p>
+  </div>
+</div>
+
+
+    </p>
+  </div>
+  <h3>Religious Information</h3>
+  <div>
+    <!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="txtReligion">Religion</label>
+  <div class="controls">
+    <input id="txtReligion" name="txtReligion" type="text" placeholder="your religion here" class="input-xlarge" required="">
+    <p class="help-block">Enter your religion here (e.g. Hindhu)</p>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="txtCaste">Caste/Sub-Caste</label>
+  <div class="controls">
+    <input id="txtCaste" name="txtCaste" type="text" placeholder="your caste/sub-caste" class="input-xlarge" required="">
+    <p class="help-block">Enter your caste here (e.g. Bhandari)</p>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="txtGothra">Gothram</label>
+  <div class="controls">
+    <input id="txtGothra" name="txtGothra" type="text" placeholder="your gothram" class="input-xlarge" required="">
+    <p class="help-block">Enter your gothram here (e.g. Kshatriya)</p>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="txtRaasi">Gothram</label>
+  <div class="controls">
+    <input id="txtRaasi" name="txtRaasi" type="text" placeholder="your raasi here" class="input-xlarge" required="">
+    <p class="help-block">Enter your raasi here (e.g. Zodiac sign like Leo, Virgo etc.)</p>
+  </div>
+</div>
+
+<!-- Multiple Radios (inline) -->
+<div class="control-group">
+  <label class="control-label" for="radioMangalik">Mangalik</label>
+  <div class="controls">
+    <label class="radio inline" for="radioMangalik-0">
+      <input type="radio" name="radioMangalik" id="radioMangalik-0" value="Yes" checked="checked" required="required">
+      Yes
+    </label>
+    <label class="radio inline" for="radioMangalik-1">
+      <input type="radio" name="radioMangalik" id="radioMangalik-1" value="No" required="required">
+      No
+    </label>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="txtEatingHabits">Eating Habbits</label>
+  <div class="controls">
+    <input id="txtEatingHabits" name="txtEatingHabits" type="text" placeholder="your favourite cusines" class="input-xlarge" required="">
+    <p class="help-block">Enter your eating habbits here (e.g. Chinese, Western, Punjabi)</p>
+  </div>
+</div>
+
+<!-- Multiple Checkboxes (inline) -->
+<div class="control-group">
+  <label class="control-label" for="chkHabbits">Habbits</label>
+  <div class="controls">
+    <label class="checkbox inline" for="chkHabbits-0">
+      <input type="checkbox" name="chkHabbits[]" id="chkHabbits-0" value="Drinking">
+      Drinking
+    </label>
+    <label class="checkbox inline" for="chkHabbits-1">
+      <input type="checkbox" name="chkHabbits[]" id="chkHabbits-1" value="Smoking">
+      Smoking
+    </label>
+  </div>
+</div>
+  </div>
+  <h3>Communication Details</h3>
+  <div>
+    <!-- Textarea -->
+<div class="control-group">
+  <label class="control-label" for="txtPermanentAddress">Permanent Address</label>
+  <div class="controls">                     
+    <textarea id="txtPermanentAddress" name="txtPermanentAddress">your native address</textarea>
+  </div>
+</div>
+
+<!-- Textarea -->
+<div class="control-group">
+  <label class="control-label" for="txtCurrentAddress">Current Address</label>
+  <div class="controls">                     
+    <textarea id="txtCurrentAddress" name="txtCurrentAddress">your current location address</textarea>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="txtCity">City</label>
+  <div class="controls">
+    <input id="txtCity" name="txtCity" type="text" placeholder="your current city" class="input-xlarge" required="">
+    <p class="help-block">Enter your current city (e.g. Mumbai)</p>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="txtState">State</label>
+  <div class="controls">
+    <input id="txtState" name="txtState" type="text" placeholder="your current state" class="input-xlarge" required="">
+    <p class="help-block">Enter your current state (e.g. Maharashtra)</p>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="txtCountry">Country</label>
+  <div class="controls">
+    <input id="txtCountry" name="txtCountry" type="text" placeholder="your current country" class="input-xlarge" required="">
+    <p class="help-block">Enter your current country (e.g. India)</p>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="txtResidenceNo">Residence</label>
+  <div class="controls">
+    <input id="txtResidenceNo" name="txtResidenceNo" type="text" placeholder="your residence number" class="input-xlarge" required="">
+    <p class="help-block">Enter your current residence phone number</p>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="txtEmail">Email</label>
+  <div class="controls">
+    <input id="txtEmail" name="txtEmail" type="text" placeholder="your email address" class="input-xlarge" required="">
+    <p class="help-block">Enter your working email address (e.g. admin@karwarbhandarisangh.com)</p>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="txtMobile">Mobile</label>
+  <div class="controls">
+    <input id="txtMobile" name="txtMobile" type="text" placeholder="your mobile number" class="input-xlarge" required="">
+    <p class="help-block">Enter your mobile number</p>
+  </div>
+</div>
+  </div>
+  <h3>Professional Information</h3>
+  <div>
+    <!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="txtQualification">Qualification</label>
+  <div class="controls">
+    <input id="txtQualification" name="txtQualification" type="text" placeholder="your current education qualification" class="input-xlarge" required="">
+    <p class="help-block">Enter your current education qualifiication</p>
+  </div>
+</div>
+
+<!-- Multiple Radios (inline) -->
+<div class="control-group">
+  <label class="control-label" for="radioJob">Job Description</label>
+  <div class="controls">
+    <label class="radio inline" for="radioJob-0">
+      <input type="radio" name="radioJob" id="radioJob-0" value="Private Service" checked="checked" required="required">
+      Private Service
+    </label>
+    <label class="radio inline" for="radioJob-1">
+      <input type="radio" name="radioJob" id="radioJob-1" value="Government Service" required="required">
+      Government Service
+    </label>
+    <label class="radio inline" for="radioJob-2">
+      <input type="radio" name="radioJob" id="radioJob-2" value="Business" required="required">
+      Business
+    </label>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="txtEmployer">Current Employer</label>
+  <div class="controls">
+    <input id="txtEmployer" name="txtEmployer" type="text" placeholder="your current employer" class="input-xlarge">
+    <p class="help-block">Enter your current employer</p>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="txtDesignation">Designation</label>
+  <div class="controls">
+    <input id="txtDesignation" name="txtDesignation" type="text" placeholder="your current designation" class="input-xlarge" required="">
+    <p class="help-block">Enter your current designation (e.g. Software Engineer)</p>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="txtAnnualIncome">Annual Income</label>
+  <div class="controls">
+    <input id="txtAnnualIncome" name="txtAnnualIncome" type="text" placeholder="your annual income" class="input-xlarge" required="">
+    <p class="help-block">Enter your annual income</p>
+  </div>
+</div>
+  </div>
+  <h3>Family Details</h3>
+  <div>
+    <!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="txtFatherName">Father's Full Name</label>
+  <div class="controls">
+    <input id="txtFatherName" name="txtFatherName" type="text" placeholder="your father's name" class="input-xlarge" required="">
+    <p class="help-block">Enter your father's name</p>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="txtMotherName">Mother's Name</label>
+  <div class="controls">
+    <input id="txtMotherName" name="txtMotherName" type="text" placeholder="your mother's name" class="input-xlarge" required="">
+    <p class="help-block">Enter your mother's madien full name</p>
+  </div>
+  
+</div>
+<!-- Multiple Radios (inline) -->
+<div class="control-group">
+  <label class="control-label" for="rdWorkingStatus">Parents Working Status</label>
+  <div class="controls">
+    <label class="radio inline" for="rdWorkingStatus-0">
+      <input type="radio" name="rdWorkingStatus" id="rdWorkingStatus-0" value="Working" checked="checked" required="required">
+      Working
+    </label>
+    <label class="radio inline" for="rdWorkingStatus-1">
+      <input type="radio" name="rdWorkingStatus" id="rdWorkingStatus-1" value="Retired" required="required">
+      Retired
+    </label>
+  </div>
+</div>
+    
+  </div>
+  <h3>About yourself and your expectations</h3>
+  <div>
+	<!-- Textarea -->
+	<div class="control-group">
+	  <label class="control-label" for="txtAboutMyself">About yourself</label>
+	  <div class="controls">                     
+		<textarea id="txtAboutMyself" name="txtAboutMyself">Enter a description about yourself</textarea>
+	  </div>
+	</div>
+
+	<!-- Textarea -->
+	<div class="control-group">
+	  <label class="control-label" for="txtExpectations">Expectations</label>
+	  <div class="controls">                     
+		<textarea id="txtExpectations" name="txtExpectations">Enter the expectations for the bride/bridegroom</textarea>
+	  </div>
+	</div>
+   </div>
+     
+</div>
+<div class="padder-top"></div>
+<div class="control-group">
+  <label class="control-label">Human Authentication</label>
+  <div class="controls">                     
+    <?php
+     require_once('recaptchalib.php');
+     $publickey = "6Ld2r-4SAAAAANwu7VYy2JY0b2t9phdDvD_ejvD_"; // you got this from the signup page
+     echo recaptcha_get_html($publickey);
+   ?>
+   <p>Please enter the proper text which you see in the box. You can even reset by clicking on refresh in the box above to generate a new image.</p>
+  </div>
+  <p>Note: If any of the fields in the form are not filled then the form will not be submitted. Please check each and every details before submitting the form. If in case you donot know some fields in the form fill 'not known' in the form above.</p>
+</div>
+<!-- Button (Double) -->
+<div class="control-group">
+  <label class="control-label" for="btnSubmit">Register your form</label>
+  <div class="controls">
+    <button id="btnSubmit" name="btnSubmit" type="submit" class="btn btn-success">Submit</button>
+    <button id="btnReset" name="btnReset" type="reset" class="btn btn-danger">Reset</button>
+  </div>
+</div>
+  </fieldset>
+</form>

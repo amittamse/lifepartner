@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+
+    <!-- Meta-Information -->
+    <title>Karwar Jilha Bhandari Sangh, Mumbai - Matrimonial</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="ACME Inc.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Vendor: Bootstrap Stylesheets http://getbootstrap.com -->
+    <link rel="stylesheet" href="vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap-theme.min.css">
+    <link href="vendor/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Our Website CSS Styles -->
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body ng-app="karwarmat">
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+
+<!-- Vendor: Javascripts -->
+<script src="vendor/jquery.min.js"></script>
+
+<!-- Boostrap version : 3.2.0-->
+<script src="vendor/bootstrap.min.js"></script>
+<!--script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script-->
+
+<!--AngularJs version : 1.2.18-->
+<script src="vendor/angular.min.js"></script>
+<script src="vendor/angular-route.min.js"></script>
+
+<!-- Vendor: Angular, followed by our custom Javascripts -->
+<!--script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular-route.min.js"></script-->
+
+
+<script type="text/javascript">    
+    //Define my common module  - which makes my life easy
+    var app = angular.module('karwarmat',['ngRoute']);
+</script>
+
+<!-- Our Website Javascripts -->
+
+<script src="app/main.js"></script>
+
+<!--Controllers-->
+<script src="app/controllers/appController.js"></script>
+<script src="app/controllers/profileController.js"></script>
+
+<!--Directives-->
+<!--script src="matrimonial/app/directives/profileController.js"></script-->
+
+<!--Services-->
+<script src="app/services/factory.js"></script>
+
+<!-- Our Website Content Goes Here -->
+<div ng-include='"app/templates/header.html"'></div>
+<div ng-view></div>
+<div ng-include='"app/templates/footer.html"'></div>
+
+</body>
+</html>
